@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from typing import Annotated
-from schema import UserSchema
-from dependencies import get_current_user
+from src.schema import UserSchema
+from src.dependencies import get_current_user
 
 user_router = APIRouter(
     prefix="/users",
